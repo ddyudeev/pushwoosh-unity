@@ -198,3 +198,52 @@ Send purchase information. This will set default tags “In-app Product”, “I
 public virtual void SendPurchase(string productId, double price, string currency)
 ```
 
+### ShowGDPRConsentUI
+
+
+A part of [The GDPR Compliance](https://www.pushwoosh.com/v1.0/docs/the-gdpr-compliance) solution that shows the GDPR Consent Form, ensuring lawful basis for processing personal data of EU citizens.
+
+```csharp
+public virtual void ShowGDPRConsentUI()
+```
+
+### showGDPRDeletionUI
+
+A part of [The GDPR Compliance](https://www.pushwoosh.com/v1.0/docs/the-gdpr-compliance) solution that shows the GDPR Deletion Form, ensuring means to comply with the right to erasure.
+
+```csharp
+public virtual void ShowGDPRDeletionUI()
+```
+
+### setCommunicationEnabled
+
+A binary method enabling/disabling all communication with Pushwoosh. The boolean value is false unsubscribes the device from receiving push notifications and stops in-app messages download. The value true reverses the effect.
+
+```csharp
+public virtual void SetCommunicationEnabled(true) // or false
+```
+
+### removeAllDeviceData
+
+Removes all data about the device and blocks all further communication with Pushwoosh.
+
+```csharp
+public virtual void RemoveAllDeviceData()
+```
+
+### isCommunicationEnabled
+
+Checks if the communication with Pushwoosh is enabled. 
+
+
+```csharp
+public virtual void IsCommunicationEnabled()
+```
+
+### isDataRemoved
+
+Checks if the user has requisted their personal data removed.
+
+```csharp
+public virtual void IsDataRemoved()
+```
